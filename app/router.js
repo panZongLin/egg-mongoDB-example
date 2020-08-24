@@ -13,3 +13,14 @@ module.exports = app => {
   router.post('/api/createUserInfo', controller.user.createUserInfo);
   router.post('/api/removeUserInfo', controller.user.removeUserInfo);
 };
+
+
+
+// const router = require('koa-router')()
+// const bodyParser = require('koa-bodyparser')
+// module.exports = (app) => {
+//   router.post( '/saveBlock', bodyParser(), app.controller.home.saveBlock )
+//   router.get('/home', app.controller.home.home)
+//   router.get('/home/:id/:name', app.controller.home.homeParams)
+//   app.use(router.routes()).use(router.allowedMethods())
+// }
